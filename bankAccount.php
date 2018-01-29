@@ -2,7 +2,7 @@
 class BankAccount
 {
 	public $accountNumber;
-	public $balance;
+	private $balance;
 
 	public function __construct($assignedAccountNumber, $firstDeposit) {
 		$this->accountNumber = $assignedAccountNumber;
@@ -29,5 +29,4 @@ class BankAccount
 
 $compteFaiza = new BankAccount("068794563645", 100);
 $compteFaiza->setBalance(500);
-echo $compteFaiza->balance . ' dollars' . PHP_EOL;
 echo $compteFaiza->getBalance() . ' cents' . PHP_EOL;
