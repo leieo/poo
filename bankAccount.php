@@ -1,12 +1,17 @@
 <?php
 class BankAccount
 {
+	const TAX = 0.08;
 	public $accountNumber;
 	private $balance;
 
 	public function __construct($assignedAccountNumber, $firstDeposit) {
 		$this->accountNumber = $assignedAccountNumber;
 		$this->balance = $firstDeposit;
+	}
+
+	public static function getTax() {
+		return static::TAX;
 	}
 
 // on crée un setter (c'est à dire une fonction)
@@ -28,5 +33,7 @@ class BankAccount
 }
 
 $compteFaiza = new BankAccount("068794563645", 100);
+echo 'Ancien solde : ' . $compteFaiza->getBalance() . 'cents' . PHP_EOL;
 $compteFaiza->setBalance(500);
-echo $compteFaiza->getBalance() . ' cents' . PHP_EOL;
+echo 'Nouveau solde : ' . $compteFaiza->getBalance() . ' cents' . PHP_EOL;
+var_dump(BankAccount::TAX);
