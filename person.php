@@ -12,8 +12,7 @@ class Person {
 	}
 
 	public function fullName() {
-		return $this->firstName . ' ' . $this->lastName 
-		. PHP_EOL;
+		return sprintf("%s %s", $this->firstName, $this->lastName);
 	}
 }
 
@@ -23,5 +22,5 @@ $audre = new Person('Audre', 'Lorde', 68);
 $fullNameFaiza = $faiza->fullName();
 $fullNameAudre = $audre->fullName();
 
-echo $fullNameAudre;
-echo $fullNameFaiza;
+echo $fullNameAudre . PHP_EOL;
+echo $fullNameFaiza . PHP_EOL;
