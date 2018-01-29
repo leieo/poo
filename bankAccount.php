@@ -12,7 +12,7 @@ class BankAccount
 // on crée un setter, c'est à dire une fonction
 // par convention, on le nomme avec le prefixe "set", mais on peut le nommer autrement.
 	public function setBalance($newBalance) {
-		if($balance < 10000) {
+		if($newBalance < 10000) {
 			throw new Exception("Montant trop faible");
 		}
 		$this->balance = $newBalance;
@@ -20,6 +20,5 @@ class BankAccount
 }
 
 $compteFaiza = new BankAccount("068794563645", 100);
-var_dump($compteFaiza);
-$compteFaiza->setBalance(5000);
-var_dump($compteFaiza);
+$compteFaiza->setBalance(50000);
+var_dump($compteFaiza->balance);
