@@ -10,12 +10,18 @@ class Person {
 		$this->lastName = $lastName;
 		$this->age = $yearsold;
 	}
+
+	public function fullName() {
+		return $this->firstName . ' ' . $this->lastName 
+		. PHP_EOL;
+	}
 }
 
 $faiza = new Person('Faïza', 'Guène', 32);
 $audre = new Person('Audre', 'Lorde', 68);
 
-echo $faiza->firstName . ' ' . $faiza->lastName . PHP_EOL;
-var_dump($faiza);
-echo $audre->firstName . ' ' . $audre->lastName . PHP_EOL;
-var_dump($audre);
+$fullNameFaiza = $faiza->fullName();
+$fullNameAudre = $audre->fullName();
+
+echo $fullNameAudre;
+echo $fullNameFaiza;
