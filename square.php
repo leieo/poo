@@ -10,3 +10,13 @@ class Square extends Form
 		return $this->cote ** 2;
 	}
 }
+
+
+
+
+
+
+
+
+
+
