@@ -6,12 +6,8 @@ class Policeman extends Person
 
 	public function __construct($firstName, $lastName, $yearsold, $rank)
 	{
-		$this->firstName = $firstName;
-		$this->lastName = $lastName;
-		$this->age = $yearsold;
+		parent::__construct($firstName, $lastName, $yearsold);
 		$this->grade = $rank;
-
-		static::$totalCount++;
 	}
 
 	public function fullName() 
