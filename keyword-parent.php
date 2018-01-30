@@ -14,7 +14,7 @@ class B extends A
 {
 	public function toto()
 	{
-		parent::tata();
+		$this->tata();
 		echo "Je suis la méthode toto appelée depuis la classe B." . PHP_EOL;
 	}
 }
