@@ -4,7 +4,7 @@ class Person {
 	public $firstName;
 	public $lastName;
 	public $age;
-	private static $totalCount = 0;
+	protected static $totalCount = 0;
 
 	public function __construct($firstName, $lastName, $yearsold) {
 		$this->firstName = $firstName;
@@ -41,6 +41,6 @@ $fullNameAudre = $audre->fullName();
 
 echo $fullNameAudre . ' aurait ' . $audre->age . ' ans.' . PHP_EOL;
 echo $fullNameFaiza . ' a vécu ' . $faiza->getAge() . ' jours.' . PHP_EOL;
+echo $lei->firstName . PHP_EOL;
 
-echo Person::getTotalCount() . PHP_EOL;
-echo Person::$totalCount . PHP_EOL;
+echo '(' . Person::getTotalCount() . ' personnes créées)' . PHP_EOL;
