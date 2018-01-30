@@ -18,6 +18,6 @@ echo (new Triangle)->area() . PHP_EOL;
 require 'person.php';
 require 'policeman.php';
 
-$policeman = new Policeman('Olivier', 'Dubois', 33);
+$policeman = new Policeman('Olivier', 'Dubois', 33, 'Sergent');
 echo $policeman->fullName() . PHP_EOL;
 Person::getTotalCount();
