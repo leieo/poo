@@ -2,11 +2,7 @@
 /**
 * 
 */
-class Form
+abstract class Form
 {
-	private $cote = 4;
-	public function area()
-	{
-		return $this->cote ** 2;
-	}
+	abstract public function area();
 }
