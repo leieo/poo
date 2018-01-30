@@ -14,7 +14,7 @@ class Person {
 	}
 
 	public static function getTotalCount() {
-		return static::$totalCount;
+		echo '(' . static::$totalCount . ' personnes créées)' . PHP_EOL;
 	}
 
 	public function fullName() {
@@ -43,4 +43,4 @@ echo $fullNameAudre . ' aurait ' . $audre->age . ' ans.' . PHP_EOL;
 echo $fullNameFaiza . ' a vécu ' . $faiza->getAge() . ' jours.' . PHP_EOL;
 echo $lei->firstName . PHP_EOL;
 
-echo '(' . Person::getTotalCount() . ' personnes créées)' . PHP_EOL;
+Person::getTotalCount();

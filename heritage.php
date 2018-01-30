@@ -20,4 +20,4 @@ require 'policeman.php';
 
 $policeman = new Policeman('Olivier', 'Dubois', 33);
 echo $policeman->fullName() . PHP_EOL;
-echo '(' . Person::getTotalCount() . ' personnes créées)' . PHP_EOL;
+Person::getTotalCount();
