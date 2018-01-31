@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Acme\\League' => $baseDir . '/src/league.php',
     'Acme\\Person' => $baseDir . '/src/person.php',
-    'Acme\\Team' => $baseDir . '/src/team.php',
+    'Acme\\teams\\Team' => $baseDir . '/src/teams/team.php',
 );

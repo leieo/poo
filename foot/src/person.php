@@ -2,6 +2,8 @@
 
 namespace Acme;
 
+use Acme\teams\Team;
+
 class Person 
 {
 	private $name;

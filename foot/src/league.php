@@ -2,6 +2,8 @@
 
 namespace Acme;
 
+use Acme\teams\Team;
+
 class League
 {
 	private $name;
@@ -12,7 +14,7 @@ class League
 		$this->teams = [];
 	}
 
-	public function addTeam($team) {
+	public function addTeam(Team $team) {
 		$this->teams[] = $team;
 	}
 
